@@ -1,0 +1,27 @@
+ALGORITHM Sentence
+ VAR
+     Long : INTEGER := 0;
+     c : CHAR ;
+     v : INTEGER :=0 ;
+     str :STRING ;
+     word: INTEGER :=0 ;
+
+ BEGIN
+     WHILE (c<> ".") DO
+      Read (c)
+      Long++
+         IF (c=" ") THEN
+             word := word+1
+         ELSE (c = "a" or "e" or "i" or "u" or "o" or "y") THEN
+             v := v+1
+         
+         END_IF
+         Write 
+         ( "the number of words is: ", word )
+         ("the number of vowels is: ", v)
+         ("the length of the sentence is: ", Long)
+
+        
+     END_WHILE
+
+ END
